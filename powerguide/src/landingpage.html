@@ -16,37 +16,50 @@
 
     <!-- Header -->
     <header class="flex flex-row sticky top-0 z-50
-             h-16 md:h-25 text-2xl items-center border-b-2 border-gray-400
+             h-16 md:h-25 text-2xl items-center border-b border-gray-400
             justify-between px-4 md:px-0 bg-black">
-        <div class="flex">
-            <a class="flex" href="#hero-section"><img class="w-10 md:w-20" src="/img/logo.png" alt="">
-                <div class="flex flex-col justify-center">
-                    <span class="text-white font-bold text-base md:text-2xl">POWER<span class="text-[#FFBB02]">GUIDE</span></span>
-                    <span class="text-white font-medium text-[10px] md:text-sm">SECURITY AND RELIABILITY</span>
-                </div>
+        <div class="flex pl-10 items-center">
+            <a href="#hero-section">
+                <img class="w-10 md:w-16" src="../img/logo.png" alt="">
             </a>
-        </div>
+
+            <div class="flex flex-col justify-center ml-2">
+                <span class="text-white font-bold text-lg md:text-xl leading-tight">
+                POWER<span class="text-[#FFBB02]">GUIDE</span>
+                </span>
+
+                <span class="text-white font-medium text-[px] md:text-xs tracking-widest opacity-70 leading-none">
+                SECURITY AND RELIABILITY
+                </span>
+            </div>
+            </div>
 
         <!-- Nav links (hidden on mobile) -->
-        <ul class="hidden md:flex flex-row font-bold gap-20 ml-auto m-10 text-gray-400 text-base">
-            <li class="hover:bg-white/50 rounded-lg px-5 py-3 "><a href="#Features-section">Features</a></li>
-            <li class="hover:bg-white/50 rounded-lg px-5 py-3 transition-colors"><a href="#About-section">About</a></li>
+        <ul class="hidden md:flex flex-row font-bold gap-6 ml-auto text-gray-400 text-xs md:text-[15px]">
+            <li class="px-5 py-3 hover:text-gray-500 active:text-gray-600 transition-colors">
+                <a href="#Features-section">Features</a>
+            </li>
+
+            <li class="px-5 py-3 mr-5 hover:text-gray-500 active:text-gray-600 transition-colors">
+                <a href="#About-section">About</a>
+            </li>
         </ul>
-        <div class="flex gap-2 md:gap-10 p-2 md:p-10 text-xs md:text-base font-bold">
+
+        <div class="flex gap-3 md:gap-4 p-2 md:p-4 text-xs md:text-[15px] font-bold">
             <a href="">
-                <button class="cursor-pointer flex items-center justify-center
-                    px-3 md:px-6 py-2 md:py-3 bg-[#FFBB02] 
+                <button class="cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-[#FFBB02]
                     text-black rounded-full hover:bg-white/50 transition-colors">
                     Login
                 </button>
-            </a>
-            <a href="">
-                <button class="cursor-pointer flex items-center justify-center
-                    rounded-full px-3 md:px-6 py-2 md:py-3 bg-[#BCBCBC]/25
-                    hover:bg-white/50 transition-colors">
+                </a>
+
+                <a href="">
+                <button class="cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-[#BCBCBC]/25
+                    rounded-full hover:bg-white/50 transition-colors">
                     <span class="text-white/75">Sign Up</span>
                 </button>
-            </a>
+                </a>
+
             <!-- Hamburger button (mobile only) -->
             <button id="menuBtn" class="md:hidden text-white p-2">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,34 +78,43 @@
     <!-- Hero Section -->
     <section id="hero-section">
         <div class="relative min-h-screen">
-            <img src="/img/landingbg.png" alt="" class="absolute inset-0 w-full h-full object-cover">
+            <img src="../img/landingbg.png" alt="" class="absolute inset-0 w-full h-full object-cover">
             <div
-                class="flex flex-col text-white h-full min-h-screen text-center justify-center relative z-10 px-4 py-20">
+                class="flex flex-col text-white h-full min-h-screen text-center justify-start pt-20 md:pt-17 relative z-10 px-4 py-20">
                 <div class="flex m-5 justify-center">
-                    <p class="flex justify-center items-center px-3 before:content-['•']
-                        before:text-[#FFBB02] before:text-2xl md:before:text-3xl
-                        before:mr-2 border-2 rounded-full border-[#FFBB02]
+                    <p class="flex items-center px-5 py-2.5 border-2 rounded-full border-[#FFBB02]
                         text-[#FFBB02] text-xs md:text-sm font-bold">
+
+                        <!-- Pulse circle -->
+                        <span class="relative flex h-3 w-3 mr-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FFBB02] opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-[#FFBB02]"></span>
+                        </span>
+
                         ACTIVE MONITORING IN DAGUPAN
                     </p>
-                </div><br>
+                    </div><br>
                 <div>
-                    <span class="text-3xl sm:text-4xl font-extrabold md:text-6xl lg:text-7xl font-bold leading-tight">
+                    <span class="text-3xl sm:text-4xl font-black md:text-6xl lg:text-7xl leading-tight">
                         When Power Fails,<br>Power<span class="text-[#FFBB02]">Guide</span> Prevails
                     </span><br><br>
-                    <p class="text-gray-300 font-normal text-sm md:text-base font-normal px-4 md:px-0">
+                    <p class="text-gray-300 text-sm md:text-xl font-medium px-4 md:px-0">
                         Stay informed with real-time outage tracking and smart
                         <br class="hidden md:block"> battery management for the modern dagupeño lifestyle.
                     </p><br><br>
                 </div>
                 <div class="flex justify-center gap-4 md:gap-20 flex-wrap">
                     <button class="cursor-pointer px-4 py-3 rounded-lg bg-[#FFBB02] text-black text-sm md:text-base
-                    hover:bg-white/50 transition-colors font-bold">
+                    hover:bg-[#D99A00] active:bg-[#FFC833] transition-colors font-bold">
                         Get Started for Free
                     </button>
-                    <button class="cursor-pointer px-6 md:px-10 py-3 rounded-lg bg-[#BCBCBC]/25 text-sm md:text-base
-                    hover:bg-white/50 transition-colors font-bold">
-                        <span class="text-white/75">Report Outages</span>
+                    <button class="group cursor-pointer px-6 md:px-10 py-3 rounded-lg bg-[#BCBCBC]/25 text-sm md:text-base
+                        hover:bg-white/50 active:bg-white/60 transition-colors font-bold">
+
+                        <span class="text-white/75 group-hover:text-black group-active:text-black transition-colors">
+                            Report Outages
+                        </span>
+
                     </button>
                 </div>
             </div>
@@ -100,7 +122,7 @@
     </section>
 
     <!-- Why PowerGuide Section -->
-    <section id="About-section" class=" min-h-screen bg-[#03041A] flex flex-col lg:flex-row border-t-1 border-white/50">
+    <section id="Features-section" class=" min-h-screen bg-[#03041A] flex flex-col lg:flex-row border-t-1 border-white/50">
 
         <!-- Left: Cards -->
         <div class="w-full lg:w-1/2 flex justify-center items-center py-10 lg:py-0">
@@ -177,8 +199,8 @@
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="Features-section" class="min-h-screen bg-[#03041A] flex flex-col 
+    <!-- About Section -->
+    <section id="About-section" class="min-h-screen bg-[#03041A] flex flex-col 
     justify-center items-center px-4 py-16 border-t-1 border-white/50">
         <div class="text-white text-center">
             <h1 class="text-3xl font-bold sm:text-4xl md:text-6xl">
