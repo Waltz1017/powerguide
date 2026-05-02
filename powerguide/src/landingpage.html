@@ -12,32 +12,32 @@
     </style>
 </head>
 
-<body class="">
+<body class="bg-black">
 
     <!-- Header -->
-    <header class="flex flex-row sticky top-0 z-50
+    <header id="mainHeader" class="flex flex-row sticky top-0 z-50
              h-16 md:h-25 text-2xl items-center border-b border-gray-400
-            justify-between px-4 md:px-0 bg-black">
-        <div class="flex pl-10 items-center">
-            <a href="#hero-section">
+            justify-between px-4 md:px-0 backdrop-blur-[2px]">
+        <div class="flex pl-8 items-center gap-2">
+            <a href="#" class="flex pl-10 items-center gap-2">
                 <img class="w-10 md:w-16" src="../img/logo.png" alt="">
+
+                <div class="flex flex-col justify-center items-start">
+                    <span class="text-white font-bold text-lg md:text-xl leading-tight">
+                        POWER<span class="text-[#FFBB02]">GUIDE</span>
+                    </span>
+
+                    <span class="text-white font-medium text-sm md:text-xs tracking-widest opacity-70 leading-none">
+                        SECURITY AND RELIABILITY
+                    </span>
+                </div>
             </a>
-
-            <div class="flex flex-col justify-center ml-2">
-                <span class="text-white font-bold text-lg md:text-xl leading-tight">
-                POWER<span class="text-[#FFBB02]">GUIDE</span>
-                </span>
-
-                <span class="text-white font-medium text-[px] md:text-xs tracking-widest opacity-70 leading-none">
-                SECURITY AND RELIABILITY
-                </span>
-            </div>
-            </div>
+        </div>
 
         <!-- Nav links (hidden on mobile) -->
-        <ul class="hidden md:flex flex-row font-bold gap-6 ml-auto text-gray-400 text-xs md:text-[15px]">
+        <ul class="hidden md:flex flex-row font-bold gap-6 ml-auto text-gray-400 text-xs md:text-sm">
             <li class="px-5 py-3 hover:text-gray-500 active:text-gray-600 transition-colors">
-                <a href="#Features-section">Features</a>
+                <a href="#features">Features</a>
             </li>
 
             <li class="px-5 py-3 mr-5 hover:text-gray-500 active:text-gray-600 transition-colors">
@@ -45,7 +45,7 @@
             </li>
         </ul>
 
-        <div class="flex gap-3 md:gap-4 p-2 md:p-4 text-xs md:text-[15px] font-bold">
+        <div class="flex items-center gap-6 md:gap-10 p-2 md:p-4 text-xs md:text-sm font-bold">
             <a href="">
                 <button class="cursor-pointer px-3 py-1.5 md:px-4 md:py-2 bg-[#FFBB02]
                     text-black rounded-full hover:bg-white/50 transition-colors">
@@ -69,7 +69,7 @@
         </div>
     </header>
 
-    <div id="mobileMenu" class="hidden md:hidden bg-black text-gray-400 
+    <div id="mobileMenu" class="hidden md:hidden backdrop-blur-[2px] text-gray-400 
             flex flex-col items-center gap-6 py-6 text-base border-b border-gray-600 sticky top-16 z-40">
         <a href="#Features-section">Features</a>
         <a href="#About-section">About</a>
@@ -95,12 +95,12 @@
                     </p>
                     </div><br>
                 <div>
-                    <span class="text-3xl sm:text-4xl font-black md:text-6xl lg:text-7xl leading-tight">
+                    <span class="text-3xl sm:text-4xl font-black md:text-6xl lg:text-6xl leading-tight">
                         When Power Fails,<br>Power<span class="text-[#FFBB02]">Guide</span> Prevails
                     </span><br><br>
-                    <p class="text-gray-300 text-sm md:text-xl font-medium px-4 md:px-0">
+                    <p class="text-white text-sm md:text-lg font-medium px-4 md:px-0">
                         Stay informed with real-time outage tracking and smart
-                        <br class="hidden md:block"> battery management for the modern dagupeño lifestyle.
+                        <br class="hidden md:block"> battery management for the modern Dagupeño lifestyle.
                     </p><br><br>
                 </div>
                 <div class="flex justify-center gap-4 md:gap-20 flex-wrap">
@@ -122,22 +122,23 @@
     </section>
 
     <!-- Why PowerGuide Section -->
-    <section id="Features-section" class=" min-h-screen bg-[#03041A] flex flex-col lg:flex-row border-t-1 border-white/50">
-
+    <section id="Features-section" class="min-h-screen bg-[#03041A] flex flex-col lg:flex-row border-t border-white">
         <!-- Left: Cards -->
-        <div class="w-full lg:w-1/2 flex justify-center items-center py-10 lg:py-0">
+        <div id="features" class="w-full lg:w-1/2 flex justify-center items-center py-10 lg:py-0" style="scroll-margin-top: 3rem;">
             <div class="flex text-white flex-col sm:flex-row gap-10
              px-6 lg:px-10 lg:m-10">
 
                 <!-- Column 1 -->
                 <div class="flex flex-col gap-10">
-                    <span class="flex flex-col items-center h-70 w-70
-                        text-center px-8 py-8 bg-[#0C0D2A] justify-center
-                        rounded-4xl shadow-[0_0_20px_#0F63CE] font-bold text-sm">
-                        <img class="h-16 md:h-[104px] object-contain" src="/img/nointernet.png" alt="">
-                        No Internet <br><br>
-                        <span class="text-left font-medium">
-                            Loss of connectivity during <br>
+                    <span class="flex flex-col items-center w-70
+                        text-center px-8 py-4 bg-[#0C0D2A]
+                        rounded-4xl shadow-[0_0_20px_#0F63CE]
+                        font-bold text-sm mt-12">
+
+                        <img class="h-16 md:h-[104px] object-contain" src="../img/nointernet.png" alt="">
+                        <span class="mt-1">No Internet</span>
+                        <span class="text-center font-medium mt-1 leading-tight">
+                            Loss of connectivity during<br>
                             brownouts
                         </span>
                     </span>
@@ -145,7 +146,7 @@
                     <span class="flex flex-col items-center justify-center
                         px-8 py-8 bg-[#0C0D2A] rounded-4xl h-70 w-70
                         shadow-[0_0_20px_#FFBB02] text-sm text-center">
-                        <img class="h-16 md:h-[104px] object-contain" src="/img/unprepared.jpg" alt=""><br><br>
+                        <img class="h-16 md:h-[104px] object-contain" src="../img/unprepared.jpg" alt=""><br>
                         <span class="text-4xl md:text-4xl font-bold text-[#FFBA00]">85% <span
                                 class="text-[#0C0D2A]">............</span></span>
                         <span class="mt-2 text-left font-medium">
@@ -155,46 +156,54 @@
                 </div>
 
                 <!-- Column 2 -->
-                <div class="flex flex-col gap-10 sm:mt-10">
-                    <span class="flex flex-col items-center justify-center
-                        px-8 py-8 bg-[#0C0D2A] rounded-4xl h-70 w-70
-                        shadow-[0_0_20px_#FE0000] text-sm text-center">
-                        <img class="h-16 md:h-[96px] object-contain" src="/img/deadbattery.png" alt="">
-                        <span class="font-bold">Dead battery</span><br>
-                        <span class="font-medium">Unexpected drain on vital devices</span>
+                <div class="flex flex-col gap-10">
+                    <span class="flex flex-col items-center justify-center w-70 h-32
+                                 px-8 py-4 bg-[#0C0D2A] rounded-4xl
+                                 shadow-[0_0_20px_#FE0000] font-bold text-sm mt-8 text-center" >                       
+                        <img class="h-12 object-contain" src="../img/deadbattery.png" alt="">
+                        <span class="font-bold mt-2">Dead battery</span>
+                        <span class="font-medium mt-1">
+                            Unexpected drain on vital devices
+                        </span>
                     </span>
 
-                    <span class="flex flex-col items-center justify-center
-                        px-8 py-8 bg-[#0C0D2A] rounded-4xl h-70 w-70
-                        shadow-[0_0_20px_#00E48D] text-sm text-center">
-                        <img class="h-12 md:h-[63px] object-contain" src="/img/data.png" alt=""><br>
-                        <span class="font-bold">Lack of Data</span><br>
-                        <span class="font-medium">Unawareness of city updates</span>
+                    <span class="flex flex-col items-center justify-center w-70 h-64
+                        px-8 py-4 bg-[#0C0D2A] rounded-4xl
+                        shadow-[0_0_20px_#00E48D] text-sm text-center">                        
+                        <img class="h-16 object-contain" src="../img/data.png" alt="">
+                        <span class="font-bold mt-2">Lack of Data</span>
+                        <span class="font-medium mt-1">
+                            Unawareness of city updates
+                        </span>
                     </span>
                 </div>
             </div>
         </div>
 
         <!-- Right: Text -->
-        <div class="w-full lg:w-1/2 flex flex-col justify-center px-8 md:px-16 lg:px-20 py-10 lg:py-0">
-            <span class="text-white flex flex-col">
+        <div class="w-full lg:w-1/2 flex flex-col justify-center items-end px-4 md:px-8 lg:px-12 py-10 lg:py-0 pl-10">
+            <span class="text-white">
                 <span class="text-lg md:text-2xl font-extrabold text-[#FFBB02]">THE CONTEXT</span><br>
-                <span class="text-4xl md:text-5xl lg:text-7xl font-extrabold">Why PowerGuide?</span><br>
-                <span class="font-medium text-base md:text-2xl">
-                    In Dagupan City, power stability remains a challenge. <br>
-                    From maintenance interruptions to weather-related <br>
-                    brownouts, users find themselves in the dark without <br>
+
+                <h2 class="text-3xl sm:text-4xl font-black md:text-6xl lg:text-6xl text-white leading-tight mb-6">
+                    Why PowerGuide?
+                </h2>
+
+                <span class="font-medium text-base md:text-lg" style="line-height: 2rem;">
+                    In Dagupan City, power stability remains a challenge.
+                    From <br> maintenance interruptions to weather-related
+                    brownouts, <br>users find themselves in the dark without
                     a plan.
                 </span>
             </span><br><br>
-            <div class="border-2 rounded-4xl italic 
-                shadow-[0_0_20px_#FFBB03] bg-[#0C0D2A] p-6 md:p-10">
-                <span class="text-white font-medium text-base md:text-2xl">
-                    "Our mission is to provide the data you need to
-                    bridge the gap between power failure and grid
-                    restoration, keeping you connected when it
-                    matters the most."
-                </span>
+            <div class="inline-block border-2 rounded-4xl italic 
+                shadow-[0_0_20px_#FFBB03] bg-[#0C0D2A] p-6 md:p-10" style="width: fit-content;">
+                <span class="text-white font-medium text-base md:text-xl" style="line-height: 2rem;">
+                "Our mission is to provide the data you need<br>
+                to bridge the gap between power failure and<br>
+                grid restoration, keeping you connected when it<br>
+                matters the most."
+            </span>
             </div>
         </div>
     </section>
@@ -399,7 +408,22 @@
     <script>
         const btn = document.getElementById('menuBtn');
         const menu = document.getElementById('mobileMenu');
+        const header = document.getElementById('mainHeader');
 
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        // Scroll effect
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
